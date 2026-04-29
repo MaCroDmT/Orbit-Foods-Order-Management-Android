@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.OrbitFoods" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/text_on_accent</item>
+        <item name="android:colorBackground">@color/bg_main</item>
+    </style>
+
+    <!-- Deep Input Style — applied per field in XML -->
+    <style name="DeepInputStyle"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeWidthFocused">2.5dp</item>
+        <item name="hintTextColor">@color/primary_dark</item>
+        <item name="android:textColorHint">@color/input_hint</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+    </style>
+
+    <!-- Primary Button Style -->
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+    </style>
+
+    <!-- Accent Button Style -->
+    <style name="AccentButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/accent</item>
+        <item name="android:textColor">@color/text_on_accent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+    </style>
+
+</resources>

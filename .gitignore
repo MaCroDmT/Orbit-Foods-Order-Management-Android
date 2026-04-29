@@ -1,0 +1,46 @@
+# Gradle files
+.gradle/
+build/
+/*/build/
+
+# IntelliJ/Android Studio files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Local configuration
+local.properties
+
+# Signing files (Sensitive)
+*.jks
+*.keystore
+*.p12
+*.jks.gpg
+*.keystore.gpg
+
+# Google Services (Sensitive)
+google-services.json
+
+# API Keys and Secrets
+secrets.properties
+.env
+*.env
+
+# Build artifacts
+captures/
+.externalNativeBuild/
+.cxx/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# NDK
+obj/
+
+# Kotlin
+.kotlin/

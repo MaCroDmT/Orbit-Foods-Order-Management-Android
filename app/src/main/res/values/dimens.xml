@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Screen Padding -->
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="item_padding">16dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_xs">11sp</dimen>
+    <dimen name="text_sm">13sp</dimen>
+    <dimen name="text_md">15sp</dimen>
+    <dimen name="text_lg">17sp</dimen>
+    <dimen name="text_xl">20sp</dimen>
+    <dimen name="text_xxl">24sp</dimen>
+    <dimen name="text_title">28sp</dimen>
+    <dimen name="text_heading">32sp</dimen>
+
+    <!-- Spacing -->
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+    <dimen name="space_xl">32dp</dimen>
+    <dimen name="space_xxl">48dp</dimen>
+
+    <!-- Input Fields -->
+    <dimen name="input_margin_bottom">14dp</dimen>
+    <dimen name="button_height">54dp</dimen>
+    <dimen name="button_radius">12dp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
+
+    <!-- Logo -->
+    <dimen name="logo_width">180dp</dimen>
+    <dimen name="logo_height">90dp</dimen>
+    <dimen name="logo_width_sm">140dp</dimen>
+    <dimen name="logo_height_sm">70dp</dimen>
+</resources>

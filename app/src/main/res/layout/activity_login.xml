@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/screen_padding">
+
+        <!-- Top colored bar -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/primary"
+            android:layout_marginBottom="@dimen/space_xl"/>
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:src="@drawable/logo_eng"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="@dimen/space_md"/>
+
+        <!-- App Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="অরবিট ফুডস"
+            android:textSize="@dimen/text_xxl"
+            android:textStyle="bold"
+            android:textColor="@color/primary_dark"
+            android:letterSpacing="0.03"
+            android:layout_marginBottom="@dimen/space_xs"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="বাজার চৌয়ারা, কুমিল্লা"
+            android:textSize="@dimen/text_sm"
+            android:textColor="@color/text_hint"
+            android:layout_marginBottom="@dimen/space_xl"/>
+
+        <!-- Login Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardElevation="@dimen/card_elevation"
+            app:cardBackgroundColor="@color/bg_card"
+            android:layout_marginBottom="@dimen/space_md">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="লগইন করুন"
+                    android:textSize="@dimen/text_xl"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="@dimen/space_lg"/>
+
+                <!-- Email -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ইমেইল ঠিকানা"
+                    android:layout_marginBottom="@dimen/input_margin_bottom"
+                    app:boxStrokeColor="@color/primary"
+                    app:boxStrokeWidth="2dp"
+                    app:hintTextColor="@color/primary"
+                    app:startIconDrawable="@android:drawable/ic_dialog_email"
+                    app:startIconTint="@color/primary"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/input_text"
+                        android:textSize="@dimen/text_md"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Password -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="পাসওয়ার্ড"
+                    android:layout_marginBottom="@dimen/space_lg"
+                    app:boxStrokeColor="@color/primary"
+                    app:boxStrokeWidth="2dp"
+                    app:hintTextColor="@color/primary"
+                    app:passwordToggleEnabled="true"
+                    app:startIconDrawable="@android:drawable/ic_lock_idle_lock"
+                    app:startIconTint="@color/primary"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColor="@color/input_text"
+                        android:textSize="@dimen/text_md"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Login Button -->
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:text="লগইন"
+                    android:textSize="@dimen/text_lg"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/primary"
+                    android:layout_marginBottom="@dimen/space_md"/>
+
+                <!-- Forgot Password -->
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="পাসওয়ার্ড ভুলে গেছেন?"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/text_md"
+                    android:gravity="center"
+                    android:padding="@dimen/space_sm"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Register Link -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/space_sm">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="অ্যাকাউন্ট নেই? "
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_md"/>
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="নতুন অ্যাকাউন্ট তৈরি করুন"
+                android:textColor="@color/accent_dark"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_md"
+                android:padding="@dimen/space_sm"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
