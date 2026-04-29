@@ -153,9 +153,6 @@ app/
 
 ## 👤 Author
 
-Developed as an **internal business** solution for my **Family Businees Bakery Factory order Sheet Automation.**
+Developed by **Prottoy Saha** as an **internal business** solution for my **Family Businees Bakery Factory order Sheet Automation.**
 
 ---
-
-
-Just tell me 👍
